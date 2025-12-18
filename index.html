@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HITS Student Enquiry Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chat-container">
+  <div class="chat-header">
+    <img src="https://i.imgur.com/9QO8z9X.png" alt="HITS Logo">
+    <h2>HITS Student Enquiry Chatbot</h2>
+  </div>
+
+  <div class="chat-body" id="chat-body">
+    <div class="message bot-msg">
+      Hello! 👋 I am your HITS enquiry assistant. How can I help you today?
+    </div>
+  </div>
+
+  <div class="quick-buttons">
+    <button onclick="quickAsk('admission')">Admissions</button>
+    <button onclick="quickAsk('courses')">Courses</button>
+    <button onclick="quickAsk('fees')">Fees</button>
+    <button onclick="quickAsk('events')">Events</button>
+    <button onclick="quickAsk('facilities')">Facilities</button>
+    <button onclick="quickAsk('portal')">Student Portal</button>
+  </div>
+
+  <div class="chat-input">
+    <input type="text" id="user-input" placeholder="Type your question here...">
+    <button id="send-btn">Send</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
